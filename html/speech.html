@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Speech Interface</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Speech Interface</h1>
+    <span class="container_two">
+      <div class="chat-container" id="message-container">
+        <div class="message" data-highlight="true">Hello! How can I assist you today?</div>
+      </div>
+      <span class="lang_selector">
+        <table id="language-table">
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>English</td>
+              <td>en-US</td>
+            </tr>
+            <tr>
+              <td>Spanish</td>
+              <td>es-ES</td>
+            </tr>
+            <tr>
+              <td>French</td>
+              <td>fr-FR</td>
+            </tr>
+            <tr>
+              <td>German</td>
+              <td>de-DE</td>
+            </tr>
+            <tr>
+              <td>Italian</td>
+              <td>it-IT</td>
+            </tr>
+            <tr>
+              <td>Japanese</td>
+              <td>ja-JP</td>
+            </tr>
+            <tr>
+              <td>Korean</td>
+              <td>ko-KR</td>
+            </tr>
+            <tr>
+              <td>Chinese (Simplified)</td>
+              <td>zh-CN</td>
+            </tr>
+            <tr>
+              <td>Russian</td>
+              <td>ru-RU</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="download-button">스크립트 다운로드</button>
+      </span>
+    </span>
+
+    <div id="input-container">
+      <span class="recognized-textarea">
+        <span class="final" id="final_span"></span>
+        <span class="interim" id="interim_span"></span>
+      </span>
+      <span class="button-area">
+        <button class="mic">마이크 <span id="recording-state"></span></button>
+      </span>
+    </div>
+
+  </div>
+
+  <script type="module" src="./speech.js"></script>
+</body>
+
+</html>
